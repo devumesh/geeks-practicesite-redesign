@@ -1,0 +1,48 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #adb5bd;
+}
+.main__container
+{
+    position: relative;
+    padding-top: 80px;
+    z-index: 1;
+}
+.status__btn__group
+{
+    width: 100%;
+}
+.accordion__button
+{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.accordion__button:focus
+{
+    box-shadow: none;
+}
+.accordion__ul
+{
+    padding-left: 0;
+}
+.accordion__li
+{
+    list-style-type: none;
+}
+@media (min-width: 768px)
+{
+    .aside__bar__container
+    {
+        position: sticky;
+        width: 100%;
+        left: 30px;
+        top: 80px;
+        bottom: 0px;
+    }
+}

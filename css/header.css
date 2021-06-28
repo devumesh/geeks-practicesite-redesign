@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navigation area */
+header
+{
+    position: fixed;
+    padding: 0 !important;
+    background: #fff;
+    z-index: 10000 !important;
+}
+header nav
+{
+    position: relative;
+}
+.brand__container
+{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.brand__logo
+{
+    width: 40px;
+    object-fit: contain;
+}
+.profile__icon a i
+{
+    font-size: 32px;
+}
+.nav__first
+{
+    font-size: 16px;
+}
+.nav__second
+{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.problem__of__the__day
+{
+    font-weight: 600;
+}
+.profile__btn i
+{
+    font-size: 30px;
+}
+.profile__dropdown
+{
+    width: 200px;
+    padding: 0;
+    border-top: 5px solid #198754;
+}
+.profile__dropdown li a span
+{
+    color: #333;
+}
+.profile__dropdown li a i
+{
+    padding: 0 5px;
+}
+.hamburger:focus
+{
+    box-shadow: none;
+}
+
+/* Notification area */
+.search_noti_container
+{
+    position: absolute;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.notification__icon
+{
+    font-size: 32px;
+}
+.search__bar
+{
+    max-width: 200px;
+}
+
+/* Between part */
+@media (min-width: 1086px) and (max-width: 1269px)
+{
+    .nav__first
+    {
+        font-size: 14px;
+    }
+    #padding-removal
+    {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1085px)
+{
+    .nav__first
+    {
+        font-size: 12px;
+    }
+    #padding-removal
+    {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+/* Above 992px */
+@media (min-width: 992px)
+{
+    .nav__collapsible__container ul
+    {
+        display: none !important;
+    }
+}
+
+/* Below 992px */
+@media (max-width:991px)
+{
+    /* navigation area */
+    .nav__first
+    {
+        font-size: 16px;
+        order: 2;
+    }
+    .nav__second
+    {
+        margin-left: auto;
+        order: 1;
+    }
+
+    /* Notification area */
+    .search_noti_container
+    {
+        right: 15px;
+        top: 0px;
+        transform: translateX(0);
+    }
+    .search__bar input
+    {
+        display: none;
+    }
+    .search__bar span
+    {
+        font-size: 30px;
+        background: none;
+        border: none;
+    }
+}
+
+/* Below  */
+@media (max-width: 576px)
+{
+    .search__bar span
+    {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}

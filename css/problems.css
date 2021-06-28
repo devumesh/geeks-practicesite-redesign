@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.potd
+{
+    background: #fff;
+    border-radius: 10px;
+}
+.potd__img{
+    width: 100%;
+}
+.banner
+{
+    display: inline-block;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 800;
+    padding-right: 10px;
+}
+.timer
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.time__run
+{
+    font-size: 1.4rem;
+}
+.time__run p span
+{
+    display: block;
+    font-size: 0.8rem;
+    padding: 0 4px;
+}
+.timer button
+{
+    width: 75%;
+}
+.progress
+{
+    height: 0.4rem;
+    margin-bottom: 5px;
+}
+.card__status__bar
+{
+    font-size: 0.8rem;
+}
+
+
+@media (min-width: 1200px)
+{
+    .fw__5
+    {
+        font-size: 1.2rem;
+    }
+    .fw__4
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991.5px){
+    .potd__question
+    {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .potd__img
+    {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+}
